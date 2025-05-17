@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web course</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle, #00b5bb, #006cf8);
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #2d2d2d;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #62a1ff;
+      text-shadow: 2px 2px #fff;
+    }
+
+    .auth-section {
+      margin-bottom: 30px;
+    }
+
+    #authStatus {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    #authButton {
+      background-color: #287eff;
+      color: white;
+      border: black;
+      padding: 10px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #authButton:hover {
+      background-color: #3700ff;
+    }
+
+    table {
+      margin: 0 auto;
+      border: 5px solid #00aeff;
+      background-color: #fff8e1;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border: 4px solid #b4f4ff;
+      border-radius: 12px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #287eff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #0044cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Get Your HTML, CSS and JavaScript Course!</h1>
+
+  <div class="auth-section">
+    <div id="authStatus">Welcome, Guest!</div>
+    <button id="authButton" onclick="toggleAuth()">Sign In</button>
+  </div>
+
+  <table>
+    <tr>
+      <td>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw?si=oeN0msxSm5i1CqWu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=rUcRQvHkZU8--HDy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DHjqpvDnNGE?si=cPzAvsCNFMXq48AC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </td>
+    </tr>
+  </table>
+
+  <h1>HTML</h1>
+  <p>Html is a programming language which is used to create a structure of a website. It stands for HYPERTEXT MARKUP LANGUAGE. It was created in 1989 by Tim Berners-Lee.</p>
+  <a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn HTML on W3Schools</a>
+
+  <h1>CSS</h1>
+  <p>CSS is used to create the style of a website. It stands for Cascading Style Sheets. It was created in 1996 by Håkon Wium Lie.</p>
+  <a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn CSS on W3Schools</a>
+
+  <h1>JavaScript</h1>
+  <p>JavaScript is used to create the functions that a website can perform. It was created in 1995 by Brendan Eich.</p>
+  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn JavaScript on W3Schools</a>
+
+  <h1>Install VS Code</h1>
+  <p>Visual Studio Code is a popular code editor for web development. Download it using the link below:</p>
+  <a href="https://code.visualstudio.com/" target="_blank">Download Visual Studio Code</a>
+
+  <h1>Install GitHub</h1>
+  <p>GitHub Desktop makes it easy to manage your code repositories on your computer. Download it below:</p>
+  <a href="https://desktop.github.com/" target="_blank">Download GitHub Desktop</a>
+
+  <p>Progrmaing studies.™</p>
+
+  <script>
+    let signedIn = false;
+
+    function toggleAuth() {
+      signedIn = !signedIn;
+      const status = document.getElementById("authStatus");
+      const button = document.getElementById("authButton");
+
+      if (signedIn) {
+        status.textContent = "Welcome!";
+        button.textContent = "Sign Out";
+      } else {
+        status.textContent = "Hey, Guest!";
+        button.textContent = "Sign In";
+      }
+    }
+  </script>
+</body>
+</html>
